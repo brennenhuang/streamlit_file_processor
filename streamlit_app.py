@@ -76,4 +76,5 @@ if uploaded_file is not None:
         workbook.save(output)
         output.seek(0)
         st.success('處理完成！')
-        st.download_button(label="下載修改後的文件", data=output, file_name="修改後的文件.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+        st.download_button(label="下載修改後的文件", data=output, file_name="修改後的文件.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", on_click=st.balloons)
+
